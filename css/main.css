@@ -1,0 +1,372 @@
+/* this is a quick reset - remove default browser styles */
+* {
+    border: none;
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+body { font-size: 16px; 
+background-color: #d0e69f;}
+
+.hidden { display: none; }
+
+.svg-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 4rem;
+}
+
+#headers {
+    background-color: #F5E000;
+    height: 4rem;
+    color: #382704;
+    text-align: center;
+    padding-top: 1rem;
+}
+.container img { width: 100%; }
+
+#newBadge #red:hover {
+    fill: yellow !important;
+}
+.quite0{fill:#060C23;}
+
+/* Clock */
+.st10{fill:#616E7D;}
+.st11{fill:#AAD4C8;}
+.st12{fill:#82BFAB;}
+.st13{fill:none;stroke:#4D4D4D;stroke-width:30;stroke-linecap:round;stroke-miterlimit:10;}
+.st14{fill:none;stroke:#616E7D;stroke-width:30;stroke-linecap:round;stroke-miterlimit:10;}
+
+#longhand, #rotate {
+animation: wallclocks 1s infinite linear;
+transform-origin: center;
+}
+
+@keyframes wallclocks {
+    form { transform: rotateZ(0deg); }   
+    to { transform: rotateZ(360deg); }
+}
+#shorthand {
+    animation: wallclock2 12s infinite linear;
+    transform-origin: center;
+    }
+
+    @keyframes wallclock2 {
+        form { transform: rotateZ(0deg); }   
+        to { transform: rotateZ(360deg); }
+    }
+
+    #innerCircle:hover {
+        animation: changeColor 3s infinite alternate;
+    }
+    
+    @keyframes changeColor {
+        0% {
+             fill: #82BFAB;
+        }
+        100% {
+            fill: #FF931E;
+        }
+    }
+
+    /* donuts */
+    #candy01:hover, #candy02:hover, #candy03:hover, #candy04:hover, #candy05:hover, #candy06:hover, #candy07:hover, #candy08:hover, #candy09:hover, #candy10:hover, #candy11:hover, #candy12:hover, #candy13:hover{
+        animation: donts 1s infinite linear;
+        transform-origin: center;
+        transform-box: fill-box;
+
+        }
+
+        @keyframes donts {
+            form { transform: rotateZ(0deg); }   
+            to { transform: rotateZ(360deg); }
+        }
+    
+        #candy:hover {
+            animation: donutColor 3s infinite alternate;
+        }
+
+        @keyframes donutColor {
+            0% {
+                 fill: #FF33BB;
+            }
+            100% {
+                fill: #382704;
+            }
+        }
+    
+        #boy {
+            animation: bouncing .6s ease-in-out infinite alternate;
+        }
+
+        #girl {
+            animation: bouncing .7s ease-in-out infinite alternate;
+        }
+
+        @keyframes bouncing {
+            from {
+                transform: rotateX(0deg);
+            }
+            to {
+                transform: rotateX(20deg);
+
+            }
+        }
+
+        #head, #tree1, #bodys {
+            animation: heads 1s ease-in-out infinite alternate;
+            transform-origin: bottom;
+        }
+
+        @keyframes heads {
+            from {
+                transform: translateY(0%) rotateZ(0deg);
+            }
+            to {
+                transform: translateY(1%) rotateZ(1deg);
+            }
+        }
+
+        
+      
+
+#rhand, #lfeet {
+    animation: rotaterhand 2s infinite alternate;
+    transform-origin: top right;
+    transform-box: fill-box;
+}
+
+@keyframes rotaterhand {
+    10% {
+        transform: rotate(0deg);
+    }   
+    70%
+    {
+        transform: rotate(-80deg);
+
+    } 
+}
+
+#lhand, #rfeet {
+    animation: rotatelhand 2s infinite alternate;
+    transform-origin: top left;
+    transform-box: fill-box;
+}
+
+@keyframes rotatelhand {
+    10% {
+        transform: rotate(0deg);
+    }   
+    70%
+    {
+        transform: rotate(50deg);
+
+    } 
+}
+
+#rotates4, #rotates1, #rotates2, #rotates3 {
+    animation: windv 15s infinite linear;
+    transform-origin: center;
+    transform-box: fill-box;
+
+    }
+    
+    @keyframes windv {
+        form { transform: rotateZ(0deg); }   
+        to { transform: rotateZ(360deg); }
+    }
+
+    #rightwing {
+        animation: fly1 2s infinite alternate;
+        transform-origin: left;
+        transform-box: fill-box;
+
+    }
+
+
+    @keyframes fly1 {
+        10% {
+            transform: rotate(0deg);
+        }   
+        70%
+        {
+            transform: rotate(30deg);
+    
+        } 
+    }
+
+    #leftwing {
+        animation: fly2 2s infinite alternate;
+        transform-origin: bottom;
+        transform-box: fill-box;
+
+    }
+
+
+    @keyframes fly2 {
+        10% {
+            transform: rotate(0deg);
+        }   
+        70%
+        {
+            transform: rotate(-30deg);
+    
+        } 
+    }
+
+    #leftwing2 {
+        animation: fly2 2s infinite alternate;
+        transform-origin: right;
+        transform-box: fill-box;
+
+    }
+
+
+
+    #ball {
+        animation: bouncingball .3s ease-out infinite alternate;
+    }
+
+    @keyframes bouncingball {
+        from {
+            transform: rotateX(10deg);
+        }
+        to {
+            transform: rotateX(30deg);
+
+        }
+    }
+
+    #hand {
+        animation: dribble .6s infinite alternate;
+        transform-origin: left;
+        transform-box: fill-box;
+
+    }
+
+
+    @keyframes dribble {
+        10% {
+            transform: rotate(0deg);
+        }   
+        70%
+        {
+            transform: rotate(12deg);
+    
+        } 
+    }
+
+
+    #yellow1 {
+        animation: yellow1 1.5s infinite alternate;
+    }
+    
+    @keyframes yellow1 {
+        0% { fill: #060C2C;}
+        40% { fill: #060C2C;}
+        100% { fill: #FCFFDE; }
+    }
+
+    #yellow2 {
+        animation: yellow2 1.5s infinite alternate;
+    }
+    
+    @keyframes yellow2 {
+        0% {  fill: #060C2C;}
+        40% {fill: #060C2C;}
+        100% {fill: #F5E000;}
+    }
+
+
+    #nails1 {
+        animation: nails1 1.5s infinite alternate;
+    }
+    
+    @keyframes nails1 {
+        0% { fill: #060C2C;}
+        40% { fill: #060C2C;}
+        100% { fill: #FFFFFF; }
+    }
+
+    #nails2 {
+        animation: nails2 1.5s infinite alternate;
+    }
+    
+    @keyframes nails2 {
+        0% {  fill: #060C2C;}
+        40% {fill: #060C2C;}
+        100% {fill: #B9BCBC;}
+    }
+
+    
+    #pink1 {
+        animation: pink1 1.5s infinite alternate;
+    }
+    
+    @keyframes pink1 {
+        0% { fill: #060C2C;}
+        9% { fill: #060C2C;}
+        10% { fill: #FFB8F4;}
+        13% { fill: #060C2C;}
+        15% { fill: #FFB8F4;}
+        25% { fill: #060C2C;}
+        40% { fill: #FFB8F4;}
+
+        100% { fill: #FFB8F4; }
+    }
+
+    #pink2 {
+        animation: pink2 1.5s infinite alternate;
+    }
+    
+    @keyframes pink2 {
+        0% { fill: #060C2C;}
+        9% { fill: #060C2C;}
+        10% { fill: #FF00D8;}
+        13% { fill: #060C2C;}
+        15% { fill: #FF00D8;}
+        25% { fill: #060C2C;}
+        40% { fill: #FF00D8;}
+
+        100% { fill: #FF00D8; }
+    }
+
+
+
+    
+    #balls {
+        animation: bouncingballs .3s ease-out infinite alternate;
+    }
+
+    @keyframes bouncingballs {
+        from {
+            transform: rotateX(0deg);
+        }
+        to {
+            transform: rotateX(30deg);
+
+        }
+    }
+
+
+    #foot {
+        animation: kick .8s infinite alternate;
+        transform-origin: right top;
+        transform-box: fill-box;
+
+    }
+
+
+    @keyframes kick {
+        10% {
+            transform: rotate(0deg);
+        }   
+        70%
+        {
+            transform: rotate(12deg);
+    
+        } 
+    }
